@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Nasirroxs/sunvinss-clone/static/css/main.d8484f96.css",
-    "main.js": "/Nasirroxs/sunvinss-clone/static/js/main.71a48a4c.js",
-    "static/media/logo4.png": "/Nasirroxs/sunvinss-clone/static/media/logo4.8037ac2d6ff7eef8b191.png",
-    "index.html": "/Nasirroxs/sunvinss-clone/index.html",
-    "main.d8484f96.css.map": "/Nasirroxs/sunvinss-clone/static/css/main.d8484f96.css.map",
-    "main.71a48a4c.js.map": "/Nasirroxs/sunvinss-clone/static/js/main.71a48a4c.js.map"
+    "main.css": "/sunvinss-clone/static/css/main.d8484f96.css",
+    "main.js": "/sunvinss-clone/static/js/main.bf8b6c09.js",
+    "static/media/logo4.png": "/sunvinss-clone/static/media/logo4.8037ac2d6ff7eef8b191.png",
+    "index.html": "/sunvinss-clone/index.html",
+    "main.d8484f96.css.map": "/sunvinss-clone/static/css/main.d8484f96.css.map",
+    "main.bf8b6c09.js.map": "/sunvinss-clone/static/js/main.bf8b6c09.js.map"
   },
   "entrypoints": [
     "static/css/main.d8484f96.css",
-    "static/js/main.71a48a4c.js"
+    "static/js/main.bf8b6c09.js"
   ]
 }

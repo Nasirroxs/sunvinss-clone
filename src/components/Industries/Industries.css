@@ -1,0 +1,60 @@
+/* Products.css / Industries.css */
+
+/* Section Wrapper */
+.products-section,
+.industries-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #e54a1a;
+}
+
+/* Grid Layout */
+.products-grid,
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .products-grid,
+  .industries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid,
+  .industries-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid,
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,61 @@
+/* Carousel.css */
+
+/* ✅ Main carousel container */
+.hero-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ✅ Bootstrap carousel override */
+.carousel-inner {
+  max-height: 800px; /* limit overall height */
+}
+
+/* ✅ Image styling */
+.carousel-inner img {
+  width: 100%;
+  max-height: 800px; /* default desktop height */
+  height: auto;
+  object-fit: contain; /* crop edges to keep aspect ratio */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* ✅ Smooth zoom effect */
+.carousel-inner img:hover {
+  transform: scale(1.02);
+}
+
+/* ✅ Adjust carousel control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* ✅ Optional: reduce button opacity on hover */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 992px) {
+  .carousel-inner img {
+    height: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner img {
+    height: 350px;
+  }
+}

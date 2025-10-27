@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import Carousel from "../Carousel/Carousel";
 import Intro from "../Intro/Intro";
 import Products from "../Products/Products";
@@ -12,7 +11,6 @@ import Footer from "../Footer/Footer";
 const MainLayout = () => {
   return (
     <div className="main-layout">
-      <Navbar />
       <div className="content">
         <Carousel />
         <Intro />

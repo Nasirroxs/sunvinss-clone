@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sunvinss-clone/static/css/main.d8484f96.css",
+    "main.js": "/sunvinss-clone/static/js/main.ac9b7dd0.js",
+    "static/media/logo4.png": "/sunvinss-clone/static/media/logo4.8037ac2d6ff7eef8b191.png",
+    "index.html": "/sunvinss-clone/index.html",
+    "main.d8484f96.css.map": "/sunvinss-clone/static/css/main.d8484f96.css.map",
+    "main.ac9b7dd0.js.map": "/sunvinss-clone/static/js/main.ac9b7dd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8484f96.css",
+    "static/js/main.ac9b7dd0.js"
+  ]
+}

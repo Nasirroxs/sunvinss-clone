@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout/MainLayout';
 import Navbar from './components/Navbar/Navbar';
 
@@ -13,7 +13,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/career" element={<Career />} /> */}
       </Routes>
-      </Router>
+    </Router>
   );
 }
+
 export default App;

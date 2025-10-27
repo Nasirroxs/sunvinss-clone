@@ -2,7 +2,7 @@
   "name": "sunvinss-clone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Nasirroxs/sunvinss-clone",
+  "homepage": "https://Nasirroxs.github.io/sunvinss-clone",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",

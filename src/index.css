@@ -52,6 +52,11 @@ html, body, #root {
   margin: 0;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-layout {
   display: flex;
   flex-direction: column;
@@ -59,5 +64,9 @@ html, body, #root {
 }
 
 .content {
+  flex: 1;
+}
+
+main {
   flex: 1;
 }

@@ -1,0 +1,26 @@
+.about-us-container {
+  max-width: 900px;
+  margin: 80px auto; /* keeps nice spacing below navbar */
+  padding: 20px;
+  line-height: 1.8;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.about-us-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6600;
+  text-transform: uppercase;
+}
+
+.about-us-container p {
+  margin-bottom: 15px;
+}
+
+.about-us-container blockquote {
+  font-style: italic;
+  color: #666;
+  margin-top: 25px;
+}

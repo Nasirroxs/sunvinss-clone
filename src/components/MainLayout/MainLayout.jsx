@@ -6,7 +6,6 @@ import Industries from "../Industries/Industries";
 import Company from "../Company/Company";
 import Services from "../Services/Services";
 import Contact from "../Contact/Contact";
-import Footer from "../Footer/Footer";
 
 const MainLayout = () => {
   return (
@@ -20,7 +19,6 @@ const MainLayout = () => {
         <Services />
         <Contact />
       </div>
-      <Footer />
     </div>
   );
 };

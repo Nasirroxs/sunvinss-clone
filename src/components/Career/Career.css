@@ -1,0 +1,76 @@
+.career-page {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  font-family: "Raleway", sans-serif;
+}
+
+.career-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #e54a1a;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.career-form input[type="text"],
+.career-form input[type="email"],
+.career-form input[type="file"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.career-form input:focus {
+  border-color: #e54a1a;
+}
+
+.career-form button {
+  padding: 12px;
+  background-color: #e54a1a;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.career-form button:hover {
+  background-color: #cc3f17;
+}
+
+@media (max-width: 768px) {
+  .career-container {
+    padding: 25px;
+  }
+}

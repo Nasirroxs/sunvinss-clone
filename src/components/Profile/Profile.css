@@ -1,0 +1,59 @@
+.profile-page {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  font-family: "Raleway", sans-serif;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #e54a1a;
+}
+
+.profile-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.profile-content h3 {
+  color: #e54a1a;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.profile-values ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.profile-values li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 25px;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+}

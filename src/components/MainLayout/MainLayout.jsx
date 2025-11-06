@@ -6,6 +6,7 @@ import Industries from "../Industries/Industries";
 import Company from "../Company/Company";
 import Services from "../Services/Services";
 import Contact from "../Contact/Contact";
+import ChatWidget from "../ChatWidget/ChatWidget";
 
 const MainLayout = () => {
   return (
@@ -19,6 +20,7 @@ const MainLayout = () => {
         <Services />
         <Contact />
       </div>
+       <ChatWidget />
     </div>
   );
 };

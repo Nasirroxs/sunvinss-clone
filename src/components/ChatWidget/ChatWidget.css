@@ -1,0 +1,138 @@
+/* Chat Widget Styles */
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chat-toggle {
+  background-color: #e54a1a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 26px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chat-box {
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.chat-header {
+  background: #e54a1a;
+  color: white;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-msg {
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.chat-msg.user {
+  background: #e54a1a;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-msg.bot {
+  background: #eee;
+  color: #333;
+  align-self: flex-start;
+}
+
+/* Typing animation */
+.chat-msg.typing {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chat-msg.typing span {
+  width: 6px;
+  height: 6px;
+  background: #999;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typingBlink 1s infinite ease-in-out;
+}
+
+.chat-msg.typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.chat-msg.typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typingBlink {
+  0%, 80%, 100% { opacity: 0.2; transform: translateY(0); }
+  40% { opacity: 1; transform: translateY(-2px); }
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.chat-input button {
+  background: #e54a1a;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.chat-input button:hover {
+  background: #cc3f17;
+}

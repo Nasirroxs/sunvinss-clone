@@ -14,6 +14,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
+    "epxress": "^0.0.1-security",
     "express": "^5.1.0",
     "nodemailer": "^7.0.10"
   },

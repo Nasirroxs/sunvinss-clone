@@ -15,13 +15,13 @@ const services = [
     id: 3,
     title:"O & M",
     image:"https://www.sunvinss.com/admin/upload/Operation and Maintance.jpg",
-    description:`SUNVINSS facilitates manpower to Project contractors by sourcing Technicians to Managers to work under different power plants and sub stations for operation and maintenance services.`,
+    description:`EAVER facilitates manpower to Project contractors by sourcing Technicians to Managers to work under different power plants and sub stations for operation and maintenance services.`,
   },
   {
     id: 4,
     title: "T & C",
     image: "https://www.sunvinss.com/admin/upload/T&C.jpg", //
-    description: `SUNVINSS engages in rendering service in Testing and Commissioning related to Substations, Power Plants, Infrastructures, Industries, and etc. We have experience related to Transmission & Distribution upto 400KV, Power Sectors, Industries and other utilities by way of Detailed Engineering, Testing & Commissioning and Operation & Maintenance. Our services waves from Field services, Instrumentation services and basic engineering services.
+    description: `EAVER engages in rendering service in Testing and Commissioning related to Substations, Power Plants, Infrastructures, Industries, and etc. We have experience related to Transmission & Distribution upto 400KV, Power Sectors, Industries and other utilities by way of Detailed Engineering, Testing & Commissioning and Operation & Maintenance. Our services waves from Field services, Instrumentation services and basic engineering services.
 
     We can manage the work as their entity as under:
 
@@ -39,7 +39,7 @@ const services = [
     id: 5,
     title: "INSTALLATION",
     image: "https://www.sunvinss.com/admin/upload/Substation-Installation-Works.jpg", 
-    description: `SUNVINSS does the installation and maintenance of electrical equipments and takes over Control & Instrumentation Works for
+    description: `EAVER does the installation and maintenance of electrical equipments and takes over Control & Instrumentation Works for
 
     • Power Plants - Thermal, Gas, Combined Cycle, Nuclear, & Hydel
 
@@ -59,7 +59,7 @@ const services = [
     id: 6,
     title: "IT / Software Development",
     image: "https://www.sunvinss.com/admin/upload/6.jpg", //
-    description: `SUNVINSS bestows software services to its customers and clients that alleviates the gap between Business and Technology.
+    description: `EAVER bestows software services to its customers and clients that alleviates the gap between Business and Technology.
 
     Our Software services include:
 

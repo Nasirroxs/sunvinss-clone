@@ -10,8 +10,13 @@ const Modal = ({ item, onClose }) => {
         <button className="close-btn" onClick={onClose}>
           ✕
         </button>
-        <img src={item.image} alt={item.name} className="modal-image" />
+
+        {item.image && (
+          <img src={item.image} alt={item.name} className="modal-image" />
+        )}
+
         <h3 className="modal-title">{item.name}</h3>
+
         <div
           className="modal-description"
           dangerouslySetInnerHTML={{

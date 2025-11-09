@@ -7,33 +7,29 @@ const Footer = () => {
       <div className="footer-container">
         {/* India Office */}
         <div className="footer-section">
-          <h3>India</h3>
-          <p><strong>SUNVINSS ENERGY PRIVATE LIMITED</strong></p>
-          <p>Old no: 278, New no: 16</p>
-          <p>Thanthai Periyar Street</p>
-          <p>Ambattur, Chennai – 600053</p>
-        </div>
-
-        {/* Kenya Office */}
-        <div className="footer-section">
-          <h3>Kenya</h3>
-          <p><strong>SUNVIN LIMITED</strong></p>
-          <p>P.O.Box: 14840-00800</p>
-          <p>1st Floor, New Waumini House</p>
-          <p>Westlands, Nairobi, Kenya</p>
-          <p>Phone: +254 780 999 899</p>
+          <h3>India Office</h3>
+          <p><strong>EAVER GLOBAL SOLUTIONS PRIVATE LIMITED</strong></p>
+          <p>No: E8</p>
+          <p>Thiru Vi Ka Industrial Estate</p>
+          <p>Guindy, Chennai – 600032</p>
+          <p>Tamil Nadu, India</p>
         </div>
 
         {/* Contact Info */}
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: <a href="mailto:info@sunvinss.com">info@sunvinss.com</a></p>
-          <p>Skype: Sunvinss Ltd</p>
+          <p>
+            Email:{" "}
+            <a href="mailto:eaverglobal@gmail.com">eaverglobal@gmail.com</a>
+          </p>
+          <p>Phone: <a href="tel:+919384564259">+91 9384564259</a></p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Sunvinss Energy Private Limited. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} <strong>Eaver Global Slountions Private Limited</strong>. All rights reserved.
+        </p>
       </div>
     </footer>
   );

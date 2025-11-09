@@ -1,47 +1,76 @@
-/* Carousel.css */
+/* ================================
+   🌈 Carousel Styles (Themed & Polished)
+   ================================ */
 
-/* ✅ Main carousel container */
 .hero-carousel {
   width: 100%;
   overflow: hidden;
   position: relative;
+  background: var(--background);
+  font-family: "Raleway", sans-serif;
+  margin-top: 135px;
 }
 
-/* ✅ Bootstrap carousel override */
 .carousel-inner {
-  max-height: 800px; /* limit overall height */
+  max-height: 800px;
+  box-shadow: 0 4px 10px var(--shadow);
+  border-radius: 8px;
 }
 
-/* ✅ Image styling */
 .carousel-inner img {
   width: 100%;
-  max-height: 800px; /* default desktop height */
+  max-height: 800px;
   height: auto;
-  object-fit: contain; /* crop edges to keep aspect ratio */
+  object-fit: cover; /* full bleed for banners */
   transition: transform 0.5s ease-in-out;
+  border-radius: 8px;
+  user-select: none;
+  pointer-events: none;
+  background: #f8f8f8;
 }
 
-/* ✅ Smooth zoom effect */
 .carousel-inner img:hover {
   transform: scale(1.02);
+  box-shadow: 0 6px 16px var(--shadow);
 }
 
-/* ✅ Adjust carousel control buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(30, 30, 30, 0.4);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* ✅ Optional: reduce button opacity on hover */
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: var(--accent-gradient);
+  transform: scale(1.15);
+  box-shadow: 0 0 10px var(--shadow);
 }
 
-/* ✅ Responsive adjustments */
+/* Optional: caption styling */
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--text-dark);
+  border-radius: 6px;
+  padding: 10px 18px;
+  box-shadow: 0 3px 10px var(--shadow);
+}
+
+.carousel-caption h5 {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  color: var(--text-muted);
+}
+
+/* Responsive */
 @media (max-width: 992px) {
   .carousel-inner img {
     height: 550px;

@@ -1,4 +1,6 @@
-/* Modal.css */
+/* ================================
+   🌈 Modal Component (Light & Dark Themed)
+   ================================ */
 
 .modal-overlay {
   position: fixed;
@@ -6,32 +8,58 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background: rgba(30, 30, 30, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000; /* higher than sticky navbar */
+  z-index: 2000;
   padding: 20px;
+  backdrop-filter: blur(6px);
   overflow-y: auto;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-content {
-  background: #fff;
+  background: var(--background);
+  color: var(--text-dark);
   max-width: 700px;
   width: 90%;
   border-radius: 12px;
   padding: 25px 30px;
   position: relative;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px var(--shadow);
   overflow-y: auto;
-  max-height: 85vh; /* ✅ prevent overflowing behind navbar */
+  max-height: 85vh;
+  transition: background 0.3s ease, color 0.3s ease;
+  animation: slideUp 0.35s ease forwards;
 }
 
-.modal-close {
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.close-btn {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: #e54a1a;
+  background: var(--accent-gradient);
   color: white;
   border: none;
   border-radius: 50%;
@@ -40,27 +68,61 @@
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.modal-close:hover {
-  background: #c63d13;
+.close-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 10px var(--shadow);
 }
 
-.modal-content h2 {
-  color: #e54a1a;
-  margin-bottom: 10px;
-}
-
-.modal-content img {
+/* Image */
+.modal-image {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
   object-fit: cover;
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
-.modal-content p {
-  font-size: 15px;
-  color: #333;
-  line-height: 1.6;
+/* Title */
+.modal-title {
+  font-size: 1.6rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Description */
+.modal-description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* 🌙 Dark Mode Support */
+[data-theme="dark"] .modal-content {
+  background: #1e1e1e;
+  color: #eaeaea;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .modal-description {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
 }

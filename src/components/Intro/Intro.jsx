@@ -6,10 +6,10 @@ const Intro = () => {
     <section className="intro">
       <div className="intro-container">
         <h2>
-          Welcome To <span>Sunvinss</span>
+          Welcome To <span>Eaver</span>
         </h2>
         <p>
-          SUNVINSS has been a leading supplier of HT & LT products for over many
+          Eaver has been a leading supplier of HT & LT products for over many
           years.
         </p>
         <p>

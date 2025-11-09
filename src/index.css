@@ -1,57 +1,234 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* ================================
+   🌈 Global Theme Colors & Typography
+   ================================ */
+:root {
+  --background: rgba(255, 255, 255, 0.98);
+  --shadow: rgba(82, 141, 255, 0.1);
+  --text-dark: #1e1e1e;
+  --text-muted: #494d5f;
+  --accent-blue: #528dff;
+  --accent-violet: #c94cff;
+  --accent-pink: #f062c0;
+  --accent-gradient: linear-gradient(
+    90deg,
+    var(--accent-blue),
+    var(--accent-violet),
+    var(--accent-pink)
+  );
+  --hover-glow: rgba(201, 76, 255, 0.3);
+  --blur: blur(8px);
 }
 
-html, body, #root {
+/* ================================
+   🌙 Dark Theme
+   ================================ */
+[data-theme="dark"] {
+  --background: #121212;
+  --shadow: rgba(0, 0, 0, 0.6);
+  --text-dark: #f5f5f5;
+  --text-muted: #c9c9c9;
+  --accent-blue: #6ea8ff;
+  --accent-violet: #b86bff;
+  --accent-pink: #ff77cc;
+  --accent-gradient: linear-gradient(
+    90deg,
+    var(--accent-blue),
+    var(--accent-violet),
+    var(--accent-pink)
+  );
+  --hover-glow: rgba(185, 117, 255, 0.4);
+}
+
+/* ================================
+   🌐 Global Defaults
+   ================================ */
+html, body,
+#root {
   height: 100%;
   margin: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--text-dark);
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--accent-violet);
+}
+
+button {
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+p, span, li {
+  color: var(--text-muted);
+}
+
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ==============================================
+   🎯 CSS Reset - Eric Meyer's Reset
+   ============================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ================================
+   🧩 Layout Containers
+   ================================ */
 #root {
   display: flex;
   flex-direction: column;

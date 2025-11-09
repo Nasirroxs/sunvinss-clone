@@ -1,76 +1,148 @@
-.career-page {
-  padding: 80px 20px;
-  background: #f9f9f9;
+/* ================================
+   🌈 Career Page (Themed & Unified)
+   ================================ */
+
+.career-section {
+  margin-top: 95px; /* Prevents navbar overlap */
+  padding: 60px 20px;
+  background: var(--background);
+  color: var(--text-dark);
   font-family: "Raleway", sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .career-container {
   max-width: 700px;
   margin: 0 auto;
-  background: #fff;
+  background: var(--background);
   border-radius: 12px;
   padding: 40px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--shadow);
 }
 
+/* Title */
 .section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
   margin-bottom: 30px;
+  color: var(--text-dark);
 }
 
-.highlight {
-  color: #e54a1a;
+.section-title .highlight {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
 }
 
+/* Intro Text */
 .intro-text {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
 }
 
+/* Form Layout */
 .career-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .career-form input[type="text"],
 .career-form input[type="email"],
 .career-form input[type="file"] {
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
   outline: none;
-  transition: border 0.2s ease;
+  background: var(--background);
+  color: var(--text-dark);
+  transition: border 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .career-form input:focus {
-  border-color: #e54a1a;
+  border-color: var(--accent-violet);
+  box-shadow: 0 0 8px rgba(201, 76, 255, 0.3);
 }
 
+/* File input */
+.career-form input[type="file"] {
+  cursor: pointer;
+}
+
+/* Button */
 .career-form button {
-  padding: 12px;
-  background-color: #e54a1a;
-  color: white;
+  padding: 14px;
+  background: var(--accent-gradient);
+  color: #fff;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .career-form button:hover {
-  background-color: #cc3f17;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px var(--shadow);
 }
 
+/* 🌙 Dark Mode Adjustments */
+[data-theme="dark"] .career-container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .career-form input {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #eee;
+}
+
+[data-theme="dark"] .career-form input:focus {
+  border-color: var(--accent-blue);
+}
+
+[data-theme="dark"] .intro-text {
+  color: #ccc;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .career-container {
     padding: 25px;
   }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Status messages */
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.status-message:contains("✅") {
+  color: #28a745;
+}
+
+.status-message:contains("❌"),
+.status-message:contains("⚠️") {
+  color: #e54a1a;
 }

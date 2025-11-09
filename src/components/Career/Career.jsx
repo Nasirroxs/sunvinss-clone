@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/SectionStyles.css";
 import "./Career.css";
 
 const Career = () => {
@@ -7,28 +8,75 @@ const Career = () => {
     email: "",
     phone: "",
     position: "",
-    resume: "",
+    resume: null,
   });
 
+  const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  // Handle input changes
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, files } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: files ? files[0] : value,
+    }));
   };
 
-  const handleSubmit = (e) => {
+  // Handle form submit
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Thank you for your interest! Our HR team will contact you soon.");
+
+    if (!formData.fullname || !formData.email || !formData.resume) {
+      setStatus("⚠️ Please fill all required fields and upload your resume.");
+      return;
+    }
+
+    setLoading(true);
+    setStatus("⏳ Sending your application...");
+
+    const data = new FormData();
+    Object.keys(formData).forEach((key) => {
+      data.append(key, formData[key]);
+    });
+
+    try {
+      const response = await fetch("http://localhost:5000/api/career", {
+        method: "POST",
+        body: data,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("✅ Application submitted successfully! Check your email for confirmation.");
+        setFormData({
+          fullname: "",
+          email: "",
+          phone: "",
+          position: "",
+          resume: null,
+        });
+      } else {
+        setStatus("❌ Failed to submit application. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Career form error:", error);
+      setStatus("⚠️ Something went wrong. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <section className="career-page">
+    <section className="section-wrapper career-section" id="career">
       <div className="career-container">
         <h2 className="section-title">
           JOIN OUR <span className="highlight">TEAM</span>
         </h2>
 
         <p className="intro-text">
-          At <strong>Sunvinss Energy</strong>, we believe in innovation, teamwork,
+          At <strong>Eaver Global Solutions</strong>, we believe in innovation, teamwork,
           and empowering our employees to achieve excellence. Explore opportunities
           to grow your career with us.
         </p>
@@ -42,6 +90,7 @@ const Career = () => {
             onChange={handleChange}
             required
           />
+
           <input
             type="email"
             name="email"
@@ -50,6 +99,7 @@ const Career = () => {
             onChange={handleChange}
             required
           />
+
           <input
             type="text"
             name="phone"
@@ -57,6 +107,7 @@ const Career = () => {
             value={formData.phone}
             onChange={handleChange}
           />
+
           <input
             type="text"
             name="position"
@@ -64,14 +115,20 @@ const Career = () => {
             value={formData.position}
             onChange={handleChange}
           />
+
           <input
             type="file"
             name="resume"
-            onChange={handleChange}
             accept=".pdf,.doc,.docx"
+            onChange={handleChange}
+            required
           />
 
-          <button type="submit">Submit Application</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Sending..." : "Submit Application"}
+          </button>
+
+          {status && <p className="status-message">{status}</p>}
         </form>
       </div>
     </section>

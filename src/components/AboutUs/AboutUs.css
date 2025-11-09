@@ -1,26 +1,77 @@
+/* ================================
+   🌈 About Section (Theme Synced)
+   ================================ */
+
+.about-us-section {
+  margin-top: 95px; /* ✅ navbar offset */
+  padding: 60px 20px;
+  background: var(--background);
+  color: var(--text-dark);
+  font-family: "Raleway", sans-serif;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
 .about-us-container {
   max-width: 900px;
-  margin: 80px auto; /* keeps nice spacing below navbar */
-  padding: 20px;
+  margin: 0 auto;
   line-height: 1.8;
-  color: #333;
-  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-.about-us-container h2 {
+/* Section Title */
+.section-title {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ff6600;
+  font-weight: 700;
+  color: var(--text-dark);
   text-transform: uppercase;
+}
+
+/* Gradient highlight for brand word */
+.section-title .highlight {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  font-weight: 700;
 }
 
 .about-us-container p {
   margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--text-muted);
 }
 
+.about-us-container strong {
+  color: var(--text-dark);
+}
+
+/* Quote box */
 .about-us-container blockquote {
   font-style: italic;
-  color: #666;
+  color: var(--text-muted);
   margin-top: 25px;
+  border-left: 4px solid var(--accent-violet);
+  padding-left: 15px;
+  background: rgba(82, 141, 255, 0.05);
+  border-radius: 4px;
+  display: inline-block;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode variant */
+[data-theme="dark"] .about-us-container blockquote {
+  background: rgba(201, 76, 255, 0.1);
+  border-left-color: var(--accent-pink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .about-us-container p {
+    font-size: 0.95rem;
+  }
 }

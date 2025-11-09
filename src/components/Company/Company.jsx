@@ -4,7 +4,7 @@ import "./Company.css";
 
 const Company = () => {
   return (
-    <section className="company-section" id="company">
+    <section className="section-wrapper" id="company">
       <h2 className="section-title">
         OUR <span className="highlight">COMPANY</span>
       </h2>
@@ -22,7 +22,7 @@ const Company = () => {
 
         <Link to="/career" className="company-card">
           <h3>Career</h3>
-          <p>Join our growing team and build your future with Sunvinss.</p>
+          <p>Join our growing team and build your future with Eaver.</p>
         </Link>
       </div>
     </section>

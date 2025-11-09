@@ -1,59 +1,95 @@
-.profile-page {
-  padding: 80px 20px;
-  background-color: #f8f9fa;
-  font-family: "Raleway", sans-serif;
+/* ================================
+   🌈 Profile Page (Themed & Unified)
+   ================================ */
+
+.profile-section {
+  margin-top: 95px; /* Prevents navbar overlap */
+  padding: 60px 20px;
+  background: var(--background);
+  color: var(--text-dark);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .profile-container {
   max-width: 900px;
   margin: 0 auto;
-  text-align: left;
-  background: #fff;
-  padding: 40px;
+  background: var(--background);
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px var(--shadow);
+  padding: 40px;
+  font-family: "Raleway", sans-serif;
 }
 
+/* Title */
 .section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
+  color: var(--text-dark);
   margin-bottom: 40px;
 }
 
-.highlight {
-  color: #e54a1a;
+.section-title .highlight {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
 }
 
+/* Paragraphs */
 .profile-content p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.05rem;
+  color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 20px;
 }
 
+/* Subheadings */
 .profile-content h3 {
-  color: #e54a1a;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-size: 1.3rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
 }
 
+/* Values list */
 .profile-values ul {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 25px;
+  color: var(--text-muted);
 }
 
 .profile-values li {
   margin-bottom: 8px;
 }
 
+/* 🌙 Dark Mode overrides */
+[data-theme="dark"] .profile-container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .profile-content p,
+[data-theme="dark"] .profile-values li {
+  color: #d1d1d1;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .profile-container {
     padding: 25px;
   }
+
   .section-title {
     font-size: 1.6rem;
+  }
+
+  .profile-content h3 {
+    font-size: 1.2rem;
   }
 }

@@ -3,7 +3,7 @@ import "./Profile.css";
 
 const Profile = () => {
   return (
-    <section className="profile-page">
+    <section className="profile-section" id="profile">
       <div className="profile-container">
         <h2 className="section-title">
           COMPANY <span className="highlight">PROFILE</span>
@@ -11,16 +11,17 @@ const Profile = () => {
 
         <div className="profile-content">
           <p>
-            <strong>Sunvinss Energy Private Limited</strong> is a global engineering
-            and manufacturing company delivering innovative energy, industrial,
-            and automation solutions. Our expertise spans multiple sectors
-            including renewable energy, electrical systems, control panels,
-            industrial harnesses, and turnkey project solutions.
+            <strong>Eaver Global Solutions Private Limited</strong> is a global
+            engineering and manufacturing company delivering innovative
+            energy, industrial, and automation solutions. Our expertise
+            spans multiple sectors, including renewable energy, electrical
+            systems, control panels, industrial harnesses, and turnkey
+            project solutions.
           </p>
 
           <p>
-            With offices in <strong>India</strong> and <strong>Kenya</strong>, Sunvinss
-            has earned the trust of leading industries by providing
+            With offices in <strong>India</strong> and <strong>Kenya</strong>,
+            Eaver has earned the trust of leading industries by providing
             cost-effective, reliable, and future-ready solutions.
           </p>
 

@@ -1,12 +1,15 @@
-/* Intro.css */
+/* ================================
+   🌈 Intro Section (Themed)
+   ================================ */
 
 .intro {
   width: 100%;
-  background-color: #f9f9f9;
+  background: var(--background);
   padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 95px;
 }
 
 .intro-container {
@@ -17,24 +20,35 @@
 
 .intro h2 {
   font-size: 2.2rem;
-  color: #333;
+  color: var(--text-dark);
   margin-bottom: 20px;
   font-weight: 700;
+  transition: color 0.3s ease;
 }
 
+/* Apply your brand accent color for highlighted words */
 .intro h2 span {
-  color: #e54a1a; /* Sunvinss orange */
+  color: var(--accent-violet);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .intro p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 15px;
 }
 
 .intro p b {
-  color: #333;
+  color: var(--text-dark);
+}
+
+/* ✅ Hover or scroll interaction (optional aesthetic touch) */
+.intro:hover h2 span {
+  filter: brightness(1.15);
 }
 
 /* ✅ Responsive */

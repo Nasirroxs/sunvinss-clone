@@ -16,14 +16,14 @@ router.post("/", async (req, res) => {
   }
 
   try {
-    console.log("🤖 Sunvinss AI (Gemini) received message:", message);
+    console.log("🤖 Eaver AI (Gemini) received message:", message);
 
     // ✅ Use Gemini 2.5 model
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `
-You are Sunvinss AI Assistant — a friendly and professional customer support bot.
-You help users learn about Sunvinss Energy’s services, products, and company information.
+You are Eaver AI Assistant — a friendly and professional customer support bot.
+You help users learn about Eaver Global Solutions services, products, and company information.
 Respond clearly, helpfully, and conversationally.
 
 User: ${message}

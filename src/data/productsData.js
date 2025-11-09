@@ -6,9 +6,9 @@ const products = [
     description: `
     Intensifying demands of electrical energy has led to construction of many sub-stations and power plants but the conventional transmission systems are unable to manage the control requirements of the complicated interconnections and variable power flow.
 
-    SUNVINSS supplies CIRCUIT BREAKERS manufactured by radical technology established with a view to compact variable applications and devices to prevent impairment to humans and electrical equipment.
+    EAVER supplies CIRCUIT BREAKERS manufactured by radical technology established with a view to compact variable applications and devices to prevent impairment to humans and electrical equipment.
 
-    SUNVINSS offers:
+    EAVER offers:
     • Vacuum circuit breaker up to 33 KV
     • SF6 circuit breaker up to 132 KV
     • Air Insulated Indoor Switchgear Cubicle MSI
@@ -16,7 +16,7 @@ const products = [
     Ring Main Unit:
     Apart from VCB, a secondary distribution system called RMU (Ring Main Unit) is also offered by us. It is basically used for an uninterrupted power supply. The minimum space for the transformer provided is up to 24 kV.
 
-    SUNVINSS offers different types of Ring Main Units as per below details:
+    EAVER offers different types of Ring Main Units as per below details:
     - 11 KV Indoor Ring Main Units (11kV RMU)
     - 11 KV LBS Indoor Metering Panel
     - 22 KV Outdoor Pole Mounted Isolator
@@ -30,11 +30,11 @@ const products = [
     description: `
     Transformers are an uplift to almost all electrical equipment that transforms a voltage power to another.
 
-    SUNVINSS supplies Power & Distribution transformers up to 25 MVA, 132 KV Class.
+    EAVER supplies Power & Distribution transformers up to 25 MVA, 132 KV Class.
 
     We have great exposure to major service related accomplishments of Transformers that includes capacity enhancement, external modification, and life enhancement.
 
-    SUNVINSS offers:
+    EAVER offers:
     • Power Transformer
     • Distribution transformer
     • Wind mill Transformer
@@ -50,9 +50,9 @@ const products = [
     name: "Cables & Cable Acc.",
     image: "https://www.sunvinss.com/admin/upload/HT & LT Cables.png",
     description: `
-    SUNVINSS provides you with a wide range of cables that suits your needs, such as copper core or aluminium core; armored or unarmored cables etc. as per different confirming standards.
+    EAVER provides you with a wide range of cables that suits your needs, such as copper core or aluminium core; armored or unarmored cables etc. as per different confirming standards.
 
-    SUNVINSS offers:
+    EAVER offers:
     • EHV Cables up to 132 KV
     • HT Cables up to 33 KV
     • LT Cables up to 3.3 KV
@@ -76,7 +76,7 @@ const products = [
     name: "OHL Materials",
     image: "https://www.sunvinss.com/admin/upload/Overhead Line Accessories.jpg",
     description: `
-    SUNVINSS offers multiple range of insulators.
+    EAVER offers multiple range of insulators.
 
     • Suspension insulators of Normal, Fog and Aero foil types from 45KN to 320KN for AC applications and 210KN discs for DC applications. 
     • Pin insulators from 11kV to 44kV.
@@ -98,7 +98,7 @@ const products = [
     name: "LT Panels (PCC, MCC, APFC etc.)",
     image: "https://www.sunvinss.com/admin/upload/LT Panels.png",
     description: `
-    SUNVINSS provides total low voltage electrical switchboard solutions for complete industrial applications. 
+    EAVER provides total low voltage electrical switchboard solutions for complete industrial applications. 
     Switchboards are designed as wall mounted, pedestal mounted and floor mounted variants.
 
     Our range includes:

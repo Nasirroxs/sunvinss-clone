@@ -1,15 +1,18 @@
-/* Footer container */
+/* ================================
+   🌈 Footer Styles (Light + Dark Mode)
+   ================================ */
+
 .footer {
-  background: #111;
-  color: #fff;
+  background: var(--background);
+  color: var(--text-dark);
   padding: 40px 20px 10px;
   font-family: "Raleway", sans-serif;
-
-  /* Sticky footer behavior */
   position: relative;
   bottom: 0;
   width: 100%;
   margin-top: auto;
+  box-shadow: 0 -2px 8px var(--shadow);
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* Grid layout for footer content */
@@ -23,10 +26,11 @@
 
 /* Section headers */
 .footer-section h3 {
-  color: #e54a1a;
+  color: var(--accent-violet);
   margin-bottom: 10px;
   font-size: 18px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 /* Text */
@@ -34,15 +38,19 @@
   margin: 5px 0;
   line-height: 1.6;
   font-size: 15px;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
 }
 
 /* Links */
 .footer-section a {
-  color: #e54a1a;
+  color: var(--accent-blue);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
+  color: var(--accent-pink);
   text-decoration: underline;
 }
 
@@ -50,8 +58,70 @@
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  border-top: 1px solid #333;
+  border-top: 1px solid var(--shadow);
   padding-top: 15px;
   font-size: 14px;
-  color: #aaa;
+  color: var(--text-muted);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 🌙 DARK MODE Enhancements */
+[data-theme="dark"] .footer {
+  background: #181818;
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] .footer-section h3 {
+  color: var(--accent-pink);
+}
+
+[data-theme="dark"] .footer-section a {
+  color: var(--accent-violet);
+}
+
+[data-theme="dark"] .footer-bottom {
+  color: #bdbdbd;
+  border-color: #2a2a2a;
+}
+
+/* ================================
+   📱 Responsive Design
+   ================================ */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    padding: 10px 0;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 15px;
+  }
+
+  .footer-section p {
+    font-size: 13px;
+  }
 }

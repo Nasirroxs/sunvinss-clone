@@ -1,17 +1,13 @@
+/* ================================
+   🌈 Company Section (Unified Theme)
+   ================================ */
+
 .company-section {
   padding: 60px 40px;
   text-align: center;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  font-weight: bold;
-}
-
-.highlight {
-  color: #e54a1a;
+  background: var(--background);
+  font-family: "Raleway", sans-serif;
+  color: var(--text-dark);
 }
 
 .company-links {
@@ -20,33 +16,38 @@
   align-items: stretch;
   gap: 2rem;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .company-card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--shadow);
   width: 300px;
   padding: 30px 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--text-dark);
   transition: all 0.3s ease;
 }
 
 .company-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px var(--shadow);
 }
 
 .company-card h3 {
   font-size: 1.4rem;
-  color: #e54a1a;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .company-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
 /* Responsive */

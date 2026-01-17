@@ -21,7 +21,8 @@ const Contact = () => {
     setStatus("sending...");
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const baseURL = process.env.REACT_APP_API_BASE_URL || `${window.location.protocol}//${window.location.host}`;
+      const response = await fetch(`${baseURL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

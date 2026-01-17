@@ -41,7 +41,8 @@ const Career = () => {
     });
 
     try {
-      const response = await fetch("http://localhost:5000/api/career", {
+      const baseURL = process.env.REACT_APP_API_BASE_URL || `${window.location.protocol}//${window.location.host}`;
+      const response = await fetch(`${baseURL}/api/career`, {
         method: "POST",
         body: data,
       });

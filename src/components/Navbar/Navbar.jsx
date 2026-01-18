@@ -4,7 +4,7 @@ import "./Navbar.css";
 import eaverlogodark from "../../assets/EaverLogoDark.png";
 import eaverlogolight from "../../assets/EaverLogoLight.png";
 import { FaBars, FaTimes, FaMoon, FaSun, FaInstagram } from "react-icons/fa";
-import { FaFacebookF, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaYoutube, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -77,6 +77,7 @@ const Navbar = () => {
               <a href="https://x.com/EaverGlobal" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a href="https://www.linkedin.com/in/eaver-global-729a87397/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+              <a href="https://wa.me/919384564250" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
 
               {/* ✅ Light/Dark Mode Toggle */}
               <div className="theme-toggle" onClick={toggleTheme}>

@@ -63,11 +63,11 @@ const Navbar = () => {
           <div className={`nav-links ${menuOpen ? "active" : ""}`}>
             <ul>
               <li><button className="nav-btn" onClick={() => handleNavigation("products")}>Products</button></li>
+              <li><button className="nav-btn" onClick={() => handleNavigation("services")}>Services</button></li>
               <li><button className="nav-btn" onClick={() => handleNavigation("industries")}>Industries</button></li>
               <li><button className="nav-btn" onClick={() => handleNavigation("company")}>Company</button></li>
-              <li><button className="nav-btn" onClick={() => handleNavigation("services")}>Services</button></li>
-              <li><button className="nav-btn" onClick={() => handleNavigation("contact")}>Contact Us</button></li>
               <li><button className="nav-btn" onClick={() => { setMenuOpen(false); navigate("/about"); }}>About Us</button></li>
+              <li><button className="nav-btn" onClick={() => handleNavigation("contact")}>Contact Us</button></li>
             </ul>
 
             {/* Social Icons + Theme Toggle */}

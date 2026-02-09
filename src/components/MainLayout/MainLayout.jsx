@@ -15,9 +15,9 @@ const MainLayout = () => {
         <Carousel />
         <Intro />
         <Products />
+        <Services />
         <Industries />
         <Company />
-        <Services />
         <Contact />
       </div>
        <ChatWidget />

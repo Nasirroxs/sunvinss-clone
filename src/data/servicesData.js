@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: 4,
-    title: "T & C",
+    title: "Testing & Commissioning",
     image: "https://www.sunvinss.com/admin/upload/T&C.jpg", //
     description: `EAVER engages in rendering service in Testing and Commissioning related to Substations, Power Plants, Infrastructures, Industries, and etc. We have experience related to Transmission & Distribution upto 400KV, Power Sectors, Industries and other utilities by way of Detailed Engineering, Testing & Commissioning and Operation & Maintenance. Our services waves from Field services, Instrumentation services and basic engineering services.
 
@@ -37,9 +37,10 @@ const services = [
   },
   {
     id: 5,
-    title: "INSTALLATION",
+    title: "Eelectrical Installation",
     image: "https://www.sunvinss.com/admin/upload/Substation-Installation-Works.jpg", 
-    description: `EAVER does the installation and maintenance of electrical equipments and takes over Control & Instrumentation Works for
+    description: `
+    EAVER does the installation and maintenance of electrical equipments and takes over Control & Instrumentation Works for
 
     • Power Plants - Thermal, Gas, Combined Cycle, Nuclear, & Hydel
 
